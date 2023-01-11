@@ -1,2 +1,23 @@
+*{ 
+    margin:0; 
+    padding: 0; 
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif; 
+}
+
+header{ 
+    width: 100vw;
+}
+
+picture img{ 
+  width: 9.5em;
+  padding: 1.5em;
+}
+
+aside img { 
+    object-fit: cover;
+}
+
+
 
 
