@@ -15,7 +15,51 @@ picture img{
 }
 
 aside img { 
-    object-fit: cover;
+    width: 100vw; 
+}
+
+main{ 
+    width: 100vw; 
+}
+
+.main_text{ 
+    display: flex; 
+    flex-direction: column;
+    text-align: center;
+    margin-top: 3em;
+}
+
+.main_text h1{ 
+    color: hsl(0, 6%, 24%); 
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    font-size: 2.5em;
+}
+
+.main_text span{ 
+    color: hsl(0, 36%, 70%);
+    font-weight: 400;
+}
+
+.main_text h2{ 
+    color: hsl(0, 36%, 70%); 
+    font-size: 1em;
+    padding: 1em; 
+}
+
+.main_email{ 
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.email{ 
+    width: 15em;
+    height: 2.5em; 
+    border-color: hsl(0, 36%, 70%);
+    border-radius: 1em;
 }
 
 
