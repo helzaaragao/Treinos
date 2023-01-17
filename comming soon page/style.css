@@ -18,11 +18,16 @@ aside img {
     width: 100vw; 
 }
 
+aside .desktop{ 
+    display: none; 
+}
+
 main{ 
     width: 100vw; 
 }
 
 .main_text{ 
+
     display: flex; 
     flex-direction: column;
     text-align: center;
@@ -33,39 +38,48 @@ main{
     color: hsl(0, 6%, 24%); 
     font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 0.3rem;
-    font-size: 2.5em;
+    letter-spacing: 0.5rem;
+    font-size: 2.9em;
 }
 
 .main_text span{ 
     color: hsl(0, 36%, 70%);
-    font-weight: 400;
+    font-weight: 300;
+    font-size: 0.8em; 
 }
 
 .main_text h2{ 
     color: hsl(0, 36%, 70%); 
-    font-size: 1em;
-    padding: 1em; 
+    font-size: 0.9em;
+    padding: 1.5em; 
+    text-align: center;
 }
 
 .main_email{ 
+    width: 100vw; 
     display: flex; 
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    
 }
 
 .email{ 
     width: 19em;
     height: 3em; 
-    border-color: hsl(0, 36%, 70%);
+    border-color: hsl(0, 48%, 76%);
     border-radius: 1em;
+    position:absolute; 
 }
 
 .button_decora{ 
-    padding: 1em; 
-    border-radius: 1em;
+    padding: 0.9em; 
+    border-radius: 1.5em;
     background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    border: none; 
+    position: relative; 
+    width: 4.5em;
+    left: 10em;
 }
 
 input::placeholder{ 
@@ -73,4 +87,13 @@ input::placeholder{
     padding: 1em;
 }
 
-
+@media(min-width: 600px) { 
+    aside .mobile{ 
+        display: none; 
+    }
+    aside .desktop{
+        display: flex;
+       position:sticky;
+       -webkit-flex: 1;-ms-flex: 1;flex: 1;
+    }
+}
