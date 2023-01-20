@@ -108,24 +108,22 @@ input::placeholder{
     }
     aside .desktop{
         display: flex;
-        width: 100%;   
+        width: 100%;    
     }
 
     main { 
         position: relative; 
         display: flex; 
         flex-direction: column;
-        width: 28em;
-    }
-
-    .main_text .main_email{ 
-       text-align: left;
-     
+        width: 30em;
+        text-align: left;
+        padding-top: 2em;
     }
 
     .main_text{ 
         text-align: left;
-          padding: 5em;
+        padding-left: 5em;
+        padding-top: 5em;
     }
 
     .main_text h1{ 
@@ -134,7 +132,8 @@ input::placeholder{
 
     .main_text h2{ 
         text-align: left; 
-        padding:0; 
+        padding: 0; 
+        margin-top: 1.5em;
     }
 
     .main_email { 
@@ -142,12 +141,19 @@ input::placeholder{
       flex-direction: row;
       justify-content: start;
       position: relative;
-     padding-left: 5em;
+      padding-left: 5em;
+      margin-top: 1.8em; 
     }
 
     .button_decora{ 
-        left: 15em;
+        left: 20em;
         right: 10em;
+    }
+
+    .email { 
+        width: 23em; 
+        height: 3.5em; 
+        border-radius: 1.5em; 
     }
 
 
