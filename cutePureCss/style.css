@@ -1,0 +1,196 @@
+body{ 
+    width: 100vw; 
+    height: 100vh; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+.container{  
+    position: relative; 
+    background:  #69d0ef; 
+    height: 70vmin; 
+    width: 70vmin; 
+    /* o que isso significa?  valor minimo responsivo*/
+    display:flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+.mouse-body{
+    position: relative; 
+    align-self: end;
+    border-bottom: 25vmin solid #fafafa;
+    border-left: 6vmin solid transparent; 
+    border-right: 6vmin solid transparent; 
+    height: 0; 
+    width: 17vmin; 
+    /* corpinho */
+}
+
+.mouse-body::after { 
+    position: absolute; 
+    content: ''; 
+    background: white;
+    height: 30.5vmin; 
+    width: 41.5vmin; 
+    border-radius: 50% 50% 50% 50% / 65% 65% 35% 35%;
+    
+    top: -14vmin; 
+    left: -12vmin; 
+}
+
+.mouse-eyes { 
+    position: relative; 
+    background: black; 
+    width: 5vmin; 
+    height: 5vmin; 
+    border-radius: 50%;
+
+    top: -2.5vmin; 
+    left: -2.5vmin; 
+    z-index: 1; 
+    box-shadow: 17.5vmin 0; 
+}
+
+/* <div>
+  before
+  <!-- Rest of stuff inside the div -->
+  after
+</div> 
+The only reasons to use one over the other are:
+
+You want the generated content to come before the element content, positionally.
+The ::after content is also “after” in source-order, so it will position on top of ::before if stacked on top of each other naturally.
+Note that the content is still inside the element they are applied to. The naming sort of feels like they might come, ya know, before or after the element, but it’s really before or after the other content inside.
+*/
+
+.mouse-eyes::after { 
+    position: absolute; 
+    content: ''; 
+    background:  white;
+    width: 1.5vmin; 
+    height: 1.5vmin; 
+    border-radius: 50%; 
+
+    left: 2.5vmin; 
+    top: 1vmin; 
+    box-shadow: 17.5vmin 0 white; 
+}
+
+.mouse-eyes::before{ 
+    position:absolute; 
+    content: '';
+    background: #f7dbe7;
+    width: 3vmin; 
+    height: 2.5vmin; 
+    border-radius: 50%;
+    top: 3vmin;
+    left: -6vmin; 
+    box-shadow: 32vmin 0 #f7dbe7; 
+}
+
+.mouse-nose {
+    position: relative; 
+    background:  black;
+    width: 3.8vmin; 
+    height: 3.8vmin; 
+    border-radius: 50% 50% 50% 50% / 26% 26% 74% 74%;
+
+    top: -4.8vmin; 
+    left: 7vmin; 
+    z-index: 1; 
+}
+
+
+.mouse-mouth { 
+    position: relative;
+    background: transparent;
+    width: 2vmin; 
+    height: 4vmin; 
+    border-radius: 50%;
+    border-bottom: 0.5vmin solid black;
+    border-right: 0.5vmin solid black;
+
+    top: -5.8vmin; 
+    left: 6.5vmin; 
+    transform: rotate(5deg); 
+    z-index: 1; 
+}
+
+.mouse-mouth::after { 
+    position: absolute;
+    content: '';
+    width: 2vmin;
+    height: 4vmin;
+    border-radius: 50%;
+    border-bottom: 0.5vmin solid black;
+    border-left: 0.5vmin solid black;
+    left: 2vmin; 
+    transform: rotate(-10deg); 
+}
+
+.mouse-ear {
+    position: relative;
+    background-color: white;
+    width: 13vmin; 
+    height: 13vmin; 
+    border-radius: 50%;
+
+    top: -29vmin; 
+    left: -12vmin; 
+    box-shadow: 29vmin 0 white;
+/* repete o que está nesse class ficando tipo uma copia não precisando colocar a class duas vez */
+}
+.mouse-ear::after {
+    position: absolute;
+    content: ''; 
+    background-color: #f7dbe7;
+    width: 8vmin; 
+    height: 8vmin; 
+    border-radius: 50%; 
+    top: 3vmin; 
+    left: 3vmin; 
+    box-shadow: 29vmin 0  #f7dbe7; 
+}
+
+.mouse-whiskers { 
+    position: relative;
+    width: 6vmin; 
+    height: 0.1vmin;
+    background-color: black;
+    top:  -25vmin; 
+    left: -16vmin; 
+    transform: rotate(8deg);
+    z-index: 1; 
+}
+
+.mouse-whiskers::after {
+    position: absolute; 
+    content: ''; 
+    background-color: black;
+    width: 8vmin; 
+    height: 0.1vmin; 
+    top: 1.5vmin; 
+    left: -1vmin; 
+    transform: rotate(-10deg);
+}
+
+.mouse-whiskers::before { 
+    position: absolute; 
+    content: ''; 
+    background-color: black;
+    width: 6vmin; 
+    height: 0.1vmin; 
+    top: 2.8vmin; 
+    transform: rotate(-18deg);
+}
+
+.right {
+    transform: scaleX(-1)
+    translateX(-44vmin) rotate(10deg); 
+}
+
+
+
+
