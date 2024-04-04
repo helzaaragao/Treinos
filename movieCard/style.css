@@ -27,22 +27,70 @@ body,input,textarea, button {
 
 main { 
     background: #ffffff;
-    width: 45rem; 
-    height: max-content;
-    margin: 2rem; 
+    width: 55rem; 
+    height: min-content;
+    margin: 6rem; 
     padding: 2.5rem; 
     display: flex; 
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    box-shadow: rgba(0, 0, 0, 0.35) 4.5px 6px 15px;
+    overflow: hidden;
 }
 
 main header { 
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1rem; 
+    align-items: center;
 }
 
 main header h1 {
-    font-weight: 500 bold; 
-    font-size: 2rem; 
+    font-weight: 500 bolder; 
+    font-size: 1.8rem; 
 }
+
+main header span {
+    color: gray;
+}
+
+main header span strong{
+    color: rgb(53, 53, 235);
+}
+
+main header p { 
+    color: rgb(53, 53, 235); 
+}
+
+main div { 
+    display: flex; 
+    gap: 1rem; 
+}
+
+main div aside { 
+    width: 80%;
+    height: min-content; 
+}
+
+main div aside img { 
+    width: 15rem; 
+}
+
+main div aside div { 
+    display: flex; 
+    justify-content: space-between;
+    margin-top: 1rem; 
+}
+
+main div article section{ 
+    display: flex; 
+}
+
+main div article section div{
+    display: flex; 
+    flex-direction: column;
+}
+
+
