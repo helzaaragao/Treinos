@@ -41,10 +41,16 @@ main {
 }
 
 main header { 
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem; 
-    align-items: center;
+  width: 100%; 
+  display: flex; 
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+main header > div { 
+  display: flex; 
+  flex-direction: column;
+  gap: 0;
 }
 
 main header h1 {
@@ -53,7 +59,7 @@ main header h1 {
 }
 
 main header span {
-    color: gray;
+    color: gray; 
 }
 
 main header span strong{
@@ -64,33 +70,86 @@ main header p {
     color: rgb(53, 53, 235); 
 }
 
-main div { 
+main .conteudo { 
     display: flex; 
     gap: 1rem; 
 }
 
-main div aside { 
+main .conteudo aside { 
     width: 80%;
-    height: min-content; 
+    height: min-content;
+    align-items: center; 
+    margin-right: 0.7rem;
 }
 
-main div aside img { 
-    width: 15rem; 
+main .conteudo aside img { 
+    width: 13rem; 
 }
 
-main div aside div { 
+main .conteudo aside .infoCompra { 
     display: flex; 
     justify-content: space-between;
     margin-top: 1rem; 
 }
 
-main div article section{ 
+main .conteudo aside .infoCompra  { 
     display: flex; 
+    align-items: center;
 }
 
-main div article section div{
+main .conteudo aside .infoCompra p{ 
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+main .conteudo aside .infoCompra button { 
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    border-radius: 1rem;
+    font-weight: bold;
+    background: transparent;
+}
+
+main .conteudo article h2{ 
+   font-size: 1.1rem; 
+   font-weight: bold;
+   line-height: 1.8;
+}
+
+main .conteudo article p { 
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+}
+
+
+
+main .conteudo article section{ 
+    display: flex; 
+    gap: 1.7rem; 
+}
+
+main .conteudo article section div{
     display: flex; 
     flex-direction: column;
+    
+}
+
+main .conteudo article section div h3{
+    margin-bottom: 0.3rem;
+   
+
+}
+
+main .conteudo article section div a{ 
+    text-decoration: none;
+    line-height: 1.4;
+    color:#187cae;
+}
+
+main .conteudo article button { 
+    width: 100%; 
 }
 
 
